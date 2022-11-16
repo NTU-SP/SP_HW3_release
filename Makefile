@@ -1,4 +1,4 @@
 all:
-	@echo "Please modify Makefile!"
+	gcc -Wall -o main main.c scheduler.c threads.c
 clean:
-	@echo "Please modify Makefile!"
+	rm main

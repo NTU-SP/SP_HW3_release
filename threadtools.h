@@ -15,7 +15,7 @@ struct tcb {
 };
 
 extern int timeslice;
-extern jmp_buf main_buf, sched_buf;
+extern jmp_buf sched_buf;
 extern struct tcb *ready_queue[THREAD_MAX], *waiting_queue[THREAD_MAX];
 /*
  * rq_size: size of the ready queue
