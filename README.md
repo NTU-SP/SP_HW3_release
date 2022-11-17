@@ -2,7 +2,7 @@
 
 **[Spec Link](https://hackmd.io/Yl3brX-BQnSibLDda5GJ7g?view)**
 
-**[Video Link](https://www.youtube.com/watch?v=buqOzr74dSU)**
+**[Video Link](https://www.youtube.com/watch?v=KmZqkBoFEYU)**
 
 **[Discussion Space Link](https://github.com/NTU-SP/SP_HW3_release/discussions)**
 
