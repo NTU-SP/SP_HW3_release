@@ -29,8 +29,6 @@ void unbuffered_io() {
  * Initializes the signal masks and the signal handler.
  */
 void init_signal() {
-    struct sigaction act;
-
     /* initialize the signal masks */
     sigemptyset(&base_mask);
     sigaddset(&base_mask, SIGTSTP);
@@ -41,9 +39,8 @@ void init_signal() {
     sigaddset(&alrm_mask, SIGALRM);
 
     /* initialize the signal handlers */
-    act.sa_handler = sighandler;
-    sigaction(SIGTSTP, &act, NULL);
-    sigaction(SIGALRM, &act, NULL);
+    signal(SIGTSTP, sighandler);
+    signal(SIGALRM, sighandler);
 
     /* block both SIGTSTP and SIGALRM */
     sigprocmask(SIG_SETMASK, &base_mask, NULL);
